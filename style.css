@@ -147,8 +147,7 @@ main div.Contact_section{
   padding-bottom: 60px;
   max-width: 1100px;
   border-radius: 50px;
-  background-color: #00FFFF;
-  opacity: 0.8;
+  background-color: rgb(0, 255, 255, 0.8);
 }
 main div.Contakut_section > h1{
   color: #415A77;
@@ -184,6 +183,9 @@ footer{
   height: 200px;
   background-color: #415A77;
   border-top: 10px solid #00FFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer div.footer_section{
   display: flex;
