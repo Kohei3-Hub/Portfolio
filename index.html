@@ -14,11 +14,13 @@
 <body>
 <header>
   <div>
-    <img src="images/KNicon.png" alt="">
+    <a class="logo_img" href="index.html">
+      <img src="images/KNicon.png" alt="">
+    </a>
     <!--PC用ナビゲーション-->
     <nav class="nav_pc">
       <ul>
-        <li><a href="#Profiru">Purofiru</a></li>
+        <li><a href="#Profile">Profile</a></li>
         <li><a href="#Skill">Skill</a></li>
         <li><a href="#Portfolio">Portfolio</a></li>
         <li><a href="#Contact">Contact</a></li>
@@ -27,7 +29,6 @@
     <!--SP用ナビゲーション-->
     <nav class="nav_sp">
       <img class="menu_btn_open" src="images/menu_100dp_000_FILL0_wght400_GRAD0_opsz48 2.png" alt="">
-      <img class="menu_btn_close" src="images/close_100dp_000_FILL0_wght400_GRAD0_opsz48 2.png" alt="">
     </nav>
   </div>
     <img class="PCmainvew" src="images/PCmainvew.png" alt="">
@@ -35,23 +36,23 @@
 </header>
 <main>
   <!--プロフィール-->
-  <div class="main_section" id="Profiru">
-    <h1 class="main_title">Purofiru</h1>
-    <div class="Purofiru_content">
-      <img src="images/Purofiru_img.png" alt="">
-      <div class="profiru_text">
+  <div class="main_section" id="Profile">
+    <h1 class="main_title">Profile</h1>
+    <div class="Profile_content">
+      <img src="images/Profile_img.png" alt="">
+      <div class="Profile_text">
           <dl>
-            <dt>名前:</dt>
-            <dd>Kohei Nishizawa</dd>
-            <dt>生年月日:</dt>
-            <dd>1997年12月04日</dd>
-            <dt>所在地:</dt>
-            <dd>大阪市内</dd>
-            <dt>好きなもの:</dt>
-            <dd>ゲーム・カラオケ・お寿司</dd>
-            <dt>嫌いなもの:</dt>
-            <dd>幽霊・アラーム・ゴーヤ</dd>
-            <dt>SNS:</dt>
+            <dt><p>名前:</p></dt>
+            <dd><p>Kohei Nishizawa</p></dd>
+            <dt><p>生年月日:</p></dt>
+            <dd><p>1997年12月04日</p></dd>
+            <dt><p>所在地:</p></dt>
+            <dd><p>大阪市内</p></dd>
+            <dt><p>好きなもの:</p></dt>
+            <dd><p>ゲーム・カラオケ・お寿司</p></dd>
+            <dt><p>嫌いなもの:</p></dt>
+            <dd><p>幽霊・アラーム・ゴーヤ</p></dd>
+            <dt><p>SNS:</p></dt>
             <dd><a href="https://www.instagram.com/nishizawa45">nishizawa45</a></dd>
           </dl>
       </div>
@@ -65,7 +66,7 @@
       <div class="Skill_block">
         <img class="Skill_icon" src="images/HTML5_Logo_512 1.png" alt="">
         <h2>HTML/CSS</h2>
-        <p></p>
+        <p>aa</p>
       </div>
       <div class="Skill_block">
         <img class="Skill_icon" src="images/js 1.png" alt="">
@@ -109,33 +110,35 @@
     <div class="contact_text">
           <div class="contact_block">
             <label for="">お名前</label>
-            <input type="text">
+            <input id="name" type="text" placeholder="入力してください">
           </div>
           <div class="contact_block">
             <label for="">フリガナ</label>
-            <input type="text">
+            <input id="furigana" type="text" placeholder="入力してください">
           </div>
           <div class="contact_block">
             <label for="">メールアドレス</label>
-            <input type="email">
+            <input id="email" type="email" placeholder="入力してください">
           </div>
           <div class="contact_block">
             <label for="">お問い合わせ内容</label>
-            <textarea name="" id=""></textarea>
+            <textarea name="" id="textbox" placeholder="入力してください"></textarea>
           </div>
-          <img src="images/btn2.png" alt="">
+          <input id="submit" class="submit_img" type="image" src="images/btn2_error.png" alt="送信する">
     </div>
   </div>
 </main>
 <footer>
   <div class="footer_section">
     <ul>
-        <li><a href="#Profiru">Purofiru</a></li>
+        <li><a href="#Profile">Profile</a></li>
         <li><a href="#Skill">Skill</a></li>
         <li><a href="#Portfolio">Portfolio</a></li>
         <li><a href="#Contact">Contact</a></li>
     </ul>
+    <a href="https://www.instagram.com/nishizawa45/?igsh=MW4yeGFlMnowMGZtYQ%3D%3D&utm_source=qr#">
     <img src="images/Instagram_Glyph_White 2.png" alt="">
+    </a>
   </div>
 </footer>
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
