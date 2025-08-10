@@ -27,6 +27,7 @@ $('.Sp_veiw').slick({
 $('.Sp_carousel_menu').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
+  arrows: false,
   dots: true,
   centerMode: true,
   centerPadding: '20%',
