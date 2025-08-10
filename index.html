@@ -1,148 +1,189 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KN_portfolio</title>
   <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <!-- Add the slick-theme.css if you want default styling -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
   <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
-  </head>
+</head>
+
 <body>
-<header>
-  <div>
-    <a class="logo_img" href="index.html">
-      <img src="images/KNicon.png" alt="">
-    </a>
-    <!--PC用ナビゲーション-->
-    <nav class="nav_pc">
+  <header>
+    <div>
+      <a class="logo_img" href="index.html">
+        <img src="images/KNicon.png" alt="">
+      </a>
+      <!--PC用ナビゲーション-->
+      <nav class="nav_pc">
+        <ul>
+          <li><a href="#Profile">Profile</a></li>
+          <li><a href="#Skill">Skill</a></li>
+          <li><a href="#Portfolio">Portfolio</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!--SP用ナビゲーション-->
+      <nav class="nav_sp">
+        <img class="menu_btn_open" src="images/menu_100dp_000_FILL0_wght400_GRAD0_opsz48 2.png" alt="">
+        <img class="menu_btn_close" src="images/close_100dp_000_FILL0_wght400_GRAD0_opsz48 2.png" alt="">
+      </nav>
+    </div>
+    <img class="PCmainvew" src="images/PCmainvew.png" alt="">
+    <img class="SPmainvew" src="images/SPmainvew.png" alt="">
+  </header>
+  <!--ハンバーガーメニュー-->
+  <div class="hamburger_menu">
+    <ul>
+      <li><a href="index.html#Profile">Profile</a></li>
+      <li><a href="index.html#Skill">Skill</a></li>
+      <li><a href="#Portfolio">Portfolio</a></li>
+      <li><a href="#Contact">Contact</a></li>
+    </ul>
+  </div>
+  <main>
+    <!--プロフィール-->
+    <div class="main_section" id="Profile">
+      <h1 class="main_title">Profile</h1>
+      <div class="Profile_content">
+        <img src="images/Profile_img.png" alt="">
+        <div class="Profile_text">
+          <dl>
+            <dt>
+              <p>名前:</p>
+            </dt>
+            <dd>
+              <p>Kohei Nishizawa</p>
+            </dd>
+            <dt>
+              <p>生年月日:</p>
+            </dt>
+            <dd>
+              <p>1997年12月04日</p>
+            </dd>
+            <dt>
+              <p>所在地:</p>
+            </dt>
+            <dd>
+              <p>大阪市内</p>
+            </dd>
+            <dt>
+              <p>好きなもの:</p>
+            </dt>
+            <dd>
+              <p>ゲーム・カラオケ・お寿司</p>
+            </dd>
+            <dt>
+              <p>嫌いなもの:</p>
+            </dt>
+            <dd>
+              <p>幽霊・アラーム・ゴーヤ</p>
+            </dd>
+            <dt>
+              <p>SNS:</p>
+            </dt>
+            <dd><a href="https://www.instagram.com/nishizawa45">nishizawa45</a></dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <!--スキルセクション-->
+    <div class="main_section" id="Skill">
+      <h1 class="main_title">Skill</h1>
+      <div class="skill_content">
+        <div class="Skill_block">
+          <img class="Skill_icon" src="images/HTML5_Logo_512 1.png" alt="">
+          <h2>HTML/CSS</h2>
+          <p>独学と前職の研修で約1年、スクールで半年勉強しました。<br>
+          レスポンシブなども書けます。position:absolute;が一番好きです。</p>
+        </div>
+        <div class="Skill_block">
+          <img class="Skill_icon" src="images/js 1.png" alt="">
+          <h2>JavaScript</h2>
+          <p>スクールで半年勉強しました。<br>
+          jqueryなど、部分的に動かすようなコードが書けます。</p>
+        </div>
+        <div class="Skill_block">
+          <img class="Skill_icon" src="images/WordPress_icon.png" alt="">
+          <h2>WordPress</h2>
+          <p>スクールで半年勉強しました。<br>
+            テーマとプラグインを使用して編集することが出来ます。</p>
+        </div>
+        <div class="Skill_block">
+          <img class="Skill_icon" src="images/Adobe_Photoshop_CC_icon 1.png" alt="">
+          <h2>Photoshop</h2>
+          <p>スクールで半年勉強しました。<br>
+          基本的な操作はできます。ポートフォリオのバナー画像はPhotoshopで作成しました。</p>
+        </div>
+        <div class="Skill_block">
+          <img class="Skill_icon" src="images/Figma Icon (Full-color) 1.png" alt="">
+          <h2>Figma</h2>
+          <p>スクールで半年勉強しました。<br>
+          デザインカンプとバナー画像の作成ができます。趣味でサムネイル画像を作成したりもしています。</p>
+        </div>
+      </div>
+    </div>
+
+    <!--ポートフォリオセクション-->
+    <div class="main_section" id="Portfolio">
+      <h1 class="main_title">Portfolio</h1>
+      <div class="Portfolio_content">
+        <div class="portfolio_img">
+          <img src="images/ハンバーガーバナー.png" alt="">
+          <img src="images/広告バナー完成品.png" alt="">
+          <img src="images/スイーツ専門店LP模写.png" alt="">
+        </div>
+        <a href="portfolio.html"><img src="images/btn1.png" alt=""></a>
+      </div>
+    </div>
+
+    <!--お問い合わせセクション-->
+    <div class="Contact_section" id="Contact">
+      <h1>Contact</h1>
+      <div class="contact_text">
+        <div class="contact_block">
+          <label for="">お名前</label>
+          <input id="name" type="text" placeholder="入力してください">
+        </div>
+        <div class="contact_block">
+          <label for="">フリガナ</label>
+          <input id="furigana" type="text" placeholder="入力してください">
+        </div>
+        <div class="contact_block">
+          <label for="">メールアドレス</label>
+          <input id="email" type="email" placeholder="入力してください">
+        </div>
+        <div class="contact_block">
+          <label for="">お問い合わせ内容</label>
+          <textarea name="" id="textbox" placeholder="入力してください"></textarea>
+        </div>
+        <input id="submit" class="submit_img" type="image" src="images/btn2_error.png" alt="送信する">
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer_section">
       <ul>
         <li><a href="#Profile">Profile</a></li>
         <li><a href="#Skill">Skill</a></li>
         <li><a href="#Portfolio">Portfolio</a></li>
         <li><a href="#Contact">Contact</a></li>
       </ul>
-    </nav>
-    <!--SP用ナビゲーション-->
-    <nav class="nav_sp">
-      <img class="menu_btn_open" src="images/menu_100dp_000_FILL0_wght400_GRAD0_opsz48 2.png" alt="">
-    </nav>
-  </div>
-    <img class="PCmainvew" src="images/PCmainvew.png" alt="">
-    <img class="SPmainvew" src="images/SPmainvew.png" alt="">
-</header>
-<main>
-  <!--プロフィール-->
-  <div class="main_section" id="Profile">
-    <h1 class="main_title">Profile</h1>
-    <div class="Profile_content">
-      <img src="images/Profile_img.png" alt="">
-      <div class="Profile_text">
-          <dl>
-            <dt><p>名前:</p></dt>
-            <dd><p>Kohei Nishizawa</p></dd>
-            <dt><p>生年月日:</p></dt>
-            <dd><p>1997年12月04日</p></dd>
-            <dt><p>所在地:</p></dt>
-            <dd><p>大阪市内</p></dd>
-            <dt><p>好きなもの:</p></dt>
-            <dd><p>ゲーム・カラオケ・お寿司</p></dd>
-            <dt><p>嫌いなもの:</p></dt>
-            <dd><p>幽霊・アラーム・ゴーヤ</p></dd>
-            <dt><p>SNS:</p></dt>
-            <dd><a href="https://www.instagram.com/nishizawa45">nishizawa45</a></dd>
-          </dl>
-      </div>
+      <a href="https://www.instagram.com/nishizawa45/?igsh=MW4yeGFlMnowMGZtYQ%3D%3D&utm_source=qr#">
+        <img src="images/Instagram_Glyph_White 2.png" alt="">
+      </a>
     </div>
-  </div>
-
-  <!--スキルセクション-->
-  <div class="main_section" id="Skill">
-    <h1 class="main_title">Skill</h1>
-    <div class="skill_content">
-      <div class="Skill_block">
-        <img class="Skill_icon" src="images/HTML5_Logo_512 1.png" alt="">
-        <h2>HTML/CSS</h2>
-        <p>aa</p>
-      </div>
-      <div class="Skill_block">
-        <img class="Skill_icon" src="images/js 1.png" alt="">
-        <h2>JavaScript</h2>
-        <p></p>
-      </div>
-      <div class="Skill_block">
-        <img class="Skill_icon" src="images/WordPress_icon.png" alt="">
-        <h2>WordPress</h2>
-        <p></p>
-      </div>
-      <div class="Skill_block">
-        <img class="Skill_icon" src="images/Adobe_Photoshop_CC_icon 1.png" alt="">
-        <h2>Photoshop</h2>
-        <p></p>
-      </div>
-      <div class="Skill_block">
-        <img class="Skill_icon" src="images/Figma Icon (Full-color) 1.png" alt="">
-        <h2>Figma</h2>
-        <p></p>
-      </div>
-    </div>
-  </div>
-
-  <!--ポートフォリオセクション-->
-  <div class="main_section" id="Portfolio">
-    <h1 class="main_title">Portfolio</h1>
-    <div class="Portfolio_content">
-      <div class="portfolio_img">
-        <img src="images/ハンバーガーバナー.png" alt="">
-        <img src="images/広告バナー完成品.png" alt="">
-        <img src="images/スイーツ専門店LP模写.png" alt="">
-      </div>
-      <a href="portfolio.html"><img src="images/btn1.png" alt=""></a>
-    </div>
-  </div>
-
-  <!--お問い合わせセクション-->
-  <div class="Contact_section" id="Contact">
-    <h1>Contact</h1>
-    <div class="contact_text">
-          <div class="contact_block">
-            <label for="">お名前</label>
-            <input id="name" type="text" placeholder="入力してください">
-          </div>
-          <div class="contact_block">
-            <label for="">フリガナ</label>
-            <input id="furigana" type="text" placeholder="入力してください">
-          </div>
-          <div class="contact_block">
-            <label for="">メールアドレス</label>
-            <input id="email" type="email" placeholder="入力してください">
-          </div>
-          <div class="contact_block">
-            <label for="">お問い合わせ内容</label>
-            <textarea name="" id="textbox" placeholder="入力してください"></textarea>
-          </div>
-          <input id="submit" class="submit_img" type="image" src="images/btn2_error.png" alt="送信する">
-    </div>
-  </div>
-</main>
-<footer>
-  <div class="footer_section">
-    <ul>
-        <li><a href="#Profile">Profile</a></li>
-        <li><a href="#Skill">Skill</a></li>
-        <li><a href="#Portfolio">Portfolio</a></li>
-        <li><a href="#Contact">Contact</a></li>
-    </ul>
-    <a href="https://www.instagram.com/nishizawa45/?igsh=MW4yeGFlMnowMGZtYQ%3D%3D&utm_source=qr#">
-    <img src="images/Instagram_Glyph_White 2.png" alt="">
-    </a>
-  </div>
-</footer>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>

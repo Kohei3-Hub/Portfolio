@@ -1,3 +1,21 @@
+//ハンバーガーメニューボタン切り替え
+const navSp = document.querySelector('.nav_sp');
+const menuBtnOpen = document.querySelector('.menu_btn_open');
+const menuBtnClose = document.querySelector('.menu_btn_close');
+const haburgerMenu = document.querySelector('.hamburger_menu');
+navSp.addEventListener('click', () =>{
+  menuBtnOpen.classList.toggle('active');
+  menuBtnClose.classList.toggle('active');
+  haburgerMenu.classList.toggle('active');
+
+  $('.hamburger_menu a').click(function() {
+      $('.menu_btn_open').removeClass('active');
+      $('.menu_btn_close').removeClass('active');
+      $('.hamburger_menu').removeClass('active');
+  })
+});
+
+
 //カルーセル(広告バナー)
 $('.Sp_veiw').slick({
   slidesToShow: 1,
@@ -64,8 +82,9 @@ function inputCheck() {
     $('#furigana').css('background-color', '#ffffff');
   }
   //emailのチェック
-  if ($('#email').val() == '' || $('#email').val().indexof('@') == -1 || $('#email').val().indexof('.') == -1) {
+  if ($('#email').val() == '' || $('#email').val().indexOf('@') == -1 || $('#email').val().indexOf('.') == -1) {
     $('#email').css('background-color', '#f79999');
+
     error = true;
     message += 'メールアドレスが未記入、または「@」「.」が含まれていません。\n';
   } else {
