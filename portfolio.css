@@ -1,71 +1,93 @@
 /*共通パーツ*/
-*{
+* {
   margin: 0;
   padding: 0;
 }
-h1{
+
+h1 {
   color: #00FFFF;
   margin-bottom: 60px;
   font-size: 40px;
   text-align: center;
 }
-h2{
+
+h2 {
   color: #0D1B2A;
   font-size: 36px;
   margin-bottom: 60px;
 }
-p{
+
+p {
   font-size: 18px;
 }
 
 /*ヘッダー*/
-header{
+header {
   width: 100%;
 }
-header div{
+
+header div {
+  width: 100%;
   height: 70px;
-  padding: 0 7%;
+  position: fixed;
   background-color: #415A77;
+  border-bottom: 3px solid #00FFFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 6;
 }
-header div a img{
+
+header div a img {
   max-height: 50px;
+  margin-left: 40px;
 }
-header div nav ul{
+
+header div nav ul {
   display: flex;
 }
-header div nav ul li{
-  margin-left: 40px;
+
+header div nav ul li {
+  margin-right: 40px;
   list-style: none;
 }
-header div nav ul li a{
+
+header div nav ul li a {
   font-size: 18px;
   color: #00FFFF;
   text-decoration: none;
 }
-header div nav ul li a:hover{
+
+header div nav ul li a:hover {
   color: #ffffff;
 }
-header nav.nav_sp{
+
+header nav.nav_sp {
   display: none;
 }
+/*ハンバーガーメニュー*/
+div.hamburger_menu{
+  display: none;
+}
+
 /*メインビュー*/
-header img.PCmainvew{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
+header img.PCmainvew {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
-header img.SPmainvew{
+
+header img.SPmainvew {
   display: none;
 }
+
 /*メイン*/
-main{
-  padding: 60px 0 100px;
+main {
+  padding: 100px 0 100px;
   background-color: #0D1B2A;
 }
-main div.main_section{
+
+main div.main_section {
   margin: 0 auto;
   margin-bottom: 30px;
   padding-top: 60px;
@@ -76,17 +98,19 @@ main div.main_section{
 }
 
 /*スマートフォンポートフォリオ*/
-main div.Sp_portfolio{
+main div.Sp_portfolio {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-main div.Sp_carousel_nav{
+
+main div.Sp_carousel_nav {
   width: 30%;
   position: relative;
 }
-main div.Sp_carousel_nav div.Sp_veiw{
+
+main div.Sp_carousel_nav div.Sp_veiw {
   width: 100%;
   height: 30%;
   position: absolute;
@@ -95,37 +119,43 @@ main div.Sp_carousel_nav div.Sp_veiw{
   transform: translate(-40%, -50%);
   z-index: 2;
 }
-main div.Sp_carousel_nav  img.Sp_carousel_menu{
+
+main div.Sp_carousel_nav img.Sp_carousel_menu {
   width: 100%;
   height: 100%;
 }
-main div.Sp_carousel{
+
+main div.Sp_carousel {
   width: 50%;
   height: 100%;
   margin-left: 4%;
   background-color: rgb(0, 255, 255, 0.3);
   text-align: center;
 }
-main img.Sp_carousel_size{
+
+main img.Sp_carousel_size {
   width: 80%;
   height: 100%;
   object-fit: cover;
 }
-main div.slick-track{
+
+main div.slick-track {
   display: flex;
   align-items: center;
 }
 
 /*PC用ポートフォリオ*/
-main div.Pc_portfolio{
+main div.Pc_portfolio {
   width: 100%;
   text-align: center;
 }
-main div.Pc_portfolio div.Pc_carousel_nav{
+
+main div.Pc_portfolio div.Pc_carousel_nav {
   width: 100%;
   position: relative;
 }
-main div.Pc_portfolio div.Pc_veiw{
+
+main div.Pc_portfolio div.Pc_veiw {
   width: 100%;
   height: auto;
   position: absolute;
@@ -133,81 +163,95 @@ main div.Pc_portfolio div.Pc_veiw{
   transform: translate(-50%, 0);
   z-index: 2;
 }
-main div.Pc_portfolio div.Pc_veiw img.Pc_main_size{
-width: 40%;
-height: auto;
-padding-top: 3px;
+
+main div.Pc_portfolio div.Pc_veiw img.Pc_main_size {
+  width: 40%;
+  height: auto;
+  padding-top: 3px;
 }
-main div.Pc_portfolio div.Pc_monitor{
+
+main div.Pc_portfolio div.Pc_monitor {
   position: relative;
 }
-main div.Pc_portfolio img.Pc_carousel_menu2{
+
+main div.Pc_portfolio img.Pc_carousel_menu2 {
   width: 70%;
   height: auto;
   position: absolute;
   top: 0;
   left: 50%;
-  transform: translate(-50%,0);
+  transform: translate(-50%, 0);
   z-index: 4;
 }
-main div.Pc_portfolio img.Pc_carousel_menu{
+
+main div.Pc_portfolio img.Pc_carousel_menu {
   width: 70%;
   margin-bottom: 60px;
 
 }
-main div.Pc_portfolio div.Pc_carousel{
+
+main div.Pc_portfolio div.Pc_carousel {
   margin: 0 auto;
   max-width: 800px;
   height: 480px;
   background-color: rgb(0, 255, 255, 0.3);
   text-align: center;
 }
-main ul.Pc_menu{
+
+main ul.Pc_menu {
   width: 100%;
   height: 180px;
   padding-left: 3%;
   display: flex;
 }
-main ul.Pc_menu li{
+
+main ul.Pc_menu li {
   margin-right: 3%;
   width: 15%;
   height: 100%;
   list-style: none;
 }
-main ul.Pc_menu li img.current{
+
+main ul.Pc_menu li img.current {
   border: 3px solid #0D1B2A;
 }
-main ul.Pc_menu li img.Pc_carousel_size{
+
+main ul.Pc_menu li img.Pc_carousel_size {
   width: 100%;
 }
 
 
 /*フッター*/
-footer{
+footer {
   width: 100%;
   height: 200px;
   background-color: #415A77;
-  border-top: 10px solid #00FFFF;
+  border-top: 3px solid #00FFFF;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-footer div.footer_section{
+
+footer div.footer_section {
   display: flex;
   justify-content: center;
 }
-footer div.footer_section ul{
+
+footer div.footer_section ul {
   display: flex;
 }
-footer div.footer_section ul li{
+
+footer div.footer_section ul li {
   margin-left: 10px;
   list-style: none;
 }
-footer div.footer_section ul li a{
+
+footer div.footer_section ul li a {
   text-decoration: none;
   color: #ffffff;
 }
-footer div.footer_section a img{
+
+footer div.footer_section a img {
   width: 30px;
   height: 30px;
   margin-left: 10px;
@@ -215,158 +259,240 @@ footer div.footer_section a img{
 
 /*レスポンシブデザイン(タブレット)*/
 @media screen and (max-width:951px) {
+
   /*共通パーツ*/
-  h1{
+  h1 {
     font-size: 32px;
   }
-  h2{
+
+  h2 {
     font-size: 32px;
     margin-bottom: 30px;
   }
-  p{
+
+  p {
     font-size: 16px;
   }
+
   /*ヘッダー*/
-  header{
-  width: 100%;
-}
-  header div{
-  height: 40px;
-  padding: 0 30px;
-  align-items: center;
-}
-  header div a img{
-  max-height: 30px;
-}
+  header {
+    width: 100%;
+  }
+
+  header div {
+    height: 40px;
+    padding: 0 30px;
+    align-items: center;
+  }
+
+  header div a img {
+    margin-left: 0;
+    max-height: 30px;
+  }
+
   /*ハンバーガーメニュー*/
-  header div nav.nav_sp{
+  header div nav.nav_sp {
+    margin-right: 8%;
     display: block;
     height: 30px;
     line-height: 40px;
+    position: relative;
   }
-  header div nav.nav_sp img.menu_btn_open{
+
+  header div nav.nav_sp img.menu_btn_open {
     max-width: 30px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
     opacity: 1;
   }
-  header div nav.nav_sp img.menu_btn_close{
-    max-width: 30px;
+
+  header div nav.nav_sp img.menu_btn_open.active {
     opacity: 0;
-    }
-  header div nav.nav_pc{
+  }
+
+  header div nav.nav_sp img.menu_btn_close {
+    max-width: 30px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+  }
+
+  header div nav.nav_sp img.menu_btn_close.active {
+    opacity: 1;
+  }
+
+  div.hamburger_menu{
+    display: block;
+    position: fixed;
+    background-color: #415A77;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 100%;
+    transition: all 1s 0s ease;
+    z-index: 5;
+  }
+  div.hamburger_menu.active{
+    left: 0;
+  }
+  div.hamburger_menu ul{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  div.hamburger_menu ul li{
+    list-style: none;
+    margin-bottom: 14px;
+  }
+  div.hamburger_menu ul li a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  header div nav.nav_pc {
     display: none;
   }
+
   /*メイン*/
-  main{
-  padding: 60px 0 60px;
-}
-  main div.main_section{
-  margin-bottom: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+  main {
+    padding: 60px 0 60px;
+  }
+
+  main div.main_section {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   /*ポートフォリオ（PC）*/
-  main div.Pc_portfolio div.Pc_carousel{
-  margin: 0 auto;
-  padding-bottom: 4%;
-  max-width: 800px;
-  height: auto;
-  background-color: rgb(0, 255, 255, 0.3);
-  text-align: center;
+  main div.Pc_portfolio div.Pc_carousel {
+    margin: 0 auto;
+    padding-bottom: 4%;
+    max-width: 800px;
+    height: auto;
+    background-color: rgb(0, 255, 255, 0.3);
+    text-align: center;
+  }
+
+  main ul.Pc_menu {
+    margin-bottom: 5%;
+    padding-left: 3%;
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  main ul.Pc_menu li {
+    margin-right: 3%;
+    width: 15%;
+    height: 100%;
+    list-style: none;
+  }
 }
-main ul.Pc_menu{
-  margin-bottom: 5%;
-  padding-left: 3%;
-  width: 100%;
-  height: auto;
-  display: flex;
-}
-main ul.Pc_menu li{
-  margin-right: 3%;
-  width: 15%;
-  height: 100%;
-  list-style: none;
-}
-}
+
 /*レスポンシブデザイン(スマホ)*/
-@media screen and (max-width:376px) {
+@media screen and (max-width:501px) {
+
   /*共通パーツ*/
-  h1{
+  h1 {
     font-size: 32px;
   }
-    h2{
+
+  h2 {
     font-size: 24px;
     margin-bottom: 16px;
   }
-  p{
+
+  p {
     font-size: 16px;
   }
+
   /*ヘッダー*/
-  header{
-  width: 100%;
-  height: 40px;
-}
-  header div{
-  height: 40px;
-  padding: 0 30px;
-  align-items: center;
-}
-  header div a img{
-  max-height: 30px;
-}
+  header {
+    width: 100%;
+    height: 40px;
+  }
+
+  header div {
+    height: 40px;
+    padding: 0 30px;
+    align-items: center;
+  }
+
+  header div a img {
+    max-height: 30px;
+  }
+
   /*ハンバーガーメニュー*/
-  header div nav.nav_sp{
+  header div nav.nav_sp {
     display: block;
     height: 30px;
     line-height: 40px;
   }
-  header div nav.nav_sp img.menu_btn_open{
+
+  header div nav.nav_sp img.menu_btn_open {
     max-width: 30px;
     opacity: 1;
   }
-    header div nav.nav_sp img.menu_btn_close{
-      max-width: 30px;
-      opacity: 0;
-    }
-  header div nav.nav_pc{
+
+  header div nav.nav_sp img.menu_btn_close {
+    max-width: 30px;
+    opacity: 0;
+  }
+
+  header div nav.nav_pc {
     display: none;
   }
+
   /*メインビュー*/
   header img.PCmainvew {
     display: none;
   }
-  header img.SPmainvew{
+
+  header img.SPmainvew {
     width: 100%;
     display: block;
   }
+
   /*メイン*/
-  main{
-  padding: 30px 0 30px;
-}
-  main div.main_section{
-  margin-bottom: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+  main {
+    padding: 30px 0 30px;
+  }
+
+  main div.main_section {
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
   /*ポートフォリオ（PC）*/
-  main div.Pc_portfolio div.Pc_carousel{
-  margin: 0 auto;
-  padding-bottom: 4%;
-  max-width: 800px;
-  height: auto;
-  background-color: rgb(0, 255, 255, 0.3);
-  text-align: center;
-}
-main ul.Pc_menu{
-  margin-bottom: 5%;
-  padding-left: 3%;
-  width: 100%;
-  height: auto;
-  display: flex;
-}
-main ul.Pc_menu li{
-  margin-right: 3%;
-  width: 15%;
-  height: 100%;
-  list-style: none;
-}
+  main div.Pc_portfolio div.Pc_carousel {
+    margin: 0 auto;
+    padding-bottom: 4%;
+    max-width: 800px;
+    height: auto;
+    background-color: rgb(0, 255, 255, 0.3);
+    text-align: center;
+  }
+
+  main ul.Pc_menu {
+    margin-bottom: 5%;
+    padding-left: 3%;
+    width: 100%;
+    height: auto;
+    display: flex;
+  }
+
+  main ul.Pc_menu li {
+    margin-right: 3%;
+    width: 15%;
+    height: 100%;
+    list-style: none;
+  }
 }
